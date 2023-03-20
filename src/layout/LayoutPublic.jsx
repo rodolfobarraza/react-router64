@@ -1,13 +1,14 @@
 import { Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 const LayoutPublic = () => { 
   return (
     <>
-      <nav>Navbar</nav>
-      <main>
+      <Navbar />
+      <main className="container">
         <Outlet />
       </main>
-      <footer>El Footer</footer>
+      <footer className="container text-center">El Footer</footer>
     </>
   )
 }
